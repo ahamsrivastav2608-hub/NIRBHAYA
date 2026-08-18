@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:orientation="vertical"
+    android:background="#080A0F" android:padding="20dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView android:id="@+id/title" android:text="CAMPUSGUARD"
+        android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:text="Your campus. One tap away from help."
+        android:textColor="#9AA3B2" android:textSize="14sp"
+        android:layout_marginTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_marginTop="18dp">
+      <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:text="EMERGENCY SOS" android:textColor="#FF6C86"
+            android:textSize="13sp" android:textStyle="bold" android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="310dp">
+          <Button android:id="@+id/sosButton" android:text="SOS"
+              android:textColor="#FFFFFF" android:textSize="40sp" android:textStyle="bold"
+              android:background="@drawable/sos_circle"
+              android:layout_gravity="center" android:layout_width="280dp" android:layout_height="280dp"/>
+        </FrameLayout>
+
+        <TextView android:id="@+id/status" android:text="Ready • 4× power-button trigger supported where the device/OS exposes it."
+            android:textColor="#9AA3B2" android:textSize="13sp" android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/simulateButton" android:text="SIMULATE 4× POWER PRESS"
+            android:textColor="#FFFFFF" android:backgroundTint="#171B25"
+            android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+
+        <LinearLayout android:orientation="horizontal" android:layout_marginTop="18dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+          <Button android:id="@+id/locationButton" android:text="📍 LIVE LOCATION"
+              android:textColor="#FFFFFF" android:backgroundTint="#101F2A"
+              android:layout_weight="1" android:layout_width="0dp" android:layout_height="54dp"/>
+          <Button android:id="@+id/reportButton" android:text="⚠ REPORT"
+              android:textColor="#FFFFFF" android:backgroundTint="#221B10"
+              android:layout_marginStart="10dp" android:layout_weight="1"
+              android:layout_width="0dp" android:layout_height="54dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/settingsButton" android:text="SETTINGS • WARDEN / POLICE"
+            android:textColor="#FFFFFF" android:backgroundTint="#171B25"
+            android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="54dp"/>
+
+        <TextView android:text="ANTI-RAGGING REPORTS ARE ANONYMOUS"
+            android:textColor="#7FE8C5" android:textSize="12sp" android:gravity="center"
+            android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+      </LinearLayout>
+    </ScrollView>
+
+    <TextView android:text="HACKATHON PROTOTYPE  •  CAMPUS SAFETY"
+        android:textColor="#4F596B" android:textSize="10sp" android:gravity="center"
+        android:layout_width="match_parent" android:layout_height="32dp"/>
+</LinearLayout>
