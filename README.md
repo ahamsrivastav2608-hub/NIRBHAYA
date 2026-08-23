@@ -88,7 +88,7 @@ Add your team members here:
 - PARTH AGARWAL- FRONTEND
 - PRANSHI - UI designer
 - TRISHIR - PITCHING
-- SHUB - PITCHING
+- SHUBH - PITCHING
 
 
 
